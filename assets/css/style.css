@@ -72,6 +72,7 @@ button, img {
     font-weight: bold;
     padding: 20px;
     color: white;
+    -webkit-text-stroke: .5px white;
     background-color: #99e6ff;
     margin: 20px;
     letter-spacing: 10px;

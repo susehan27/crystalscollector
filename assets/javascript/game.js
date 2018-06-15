@@ -23,6 +23,7 @@ var startGame = function() {
 
     $("#randomNumber").text(randomNumber);
     $("#score").text(score);
+    $(".winloss").text("CLICK ON A CRYSTAL TO START");
     $(".crystals").each(function() {
         crystalNumber = [Math.floor(Math.random()*10+1)];
         crystals.push($(this).attr("data-crystalValue", crystalNumber));
@@ -41,13 +42,17 @@ $(".crystals").click(function(){
         wins++;
         $("#wins").text(wins);
         $(".winloss").text("WINNER");
-        startGame();
+        setTimeout(function(){
+            startGame();
+        }, 1000);
     }
     else if (score >= randomNumber) {
         losses++;
         $("#losses").text(losses);
         $(".winloss").text("LOSER");
-        startGame();
+        setTimeout(function(){
+            startGame();
+        }, 1000);
     }
 })
 
