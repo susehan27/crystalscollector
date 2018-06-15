@@ -1,0 +1,82 @@
+#heading {
+    padding: 20px;
+}
+
+#title {
+    text-align: center;
+    font-family: 'Shrikhand', cursive;
+    font-size: 50px;
+    color:#1ac6ff;
+    text-shadow: 4px 4px 0 pink;
+    -webkit-text-stroke: 2px #ffff99;
+}
+
+#smallTitle {
+    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+    letter-spacing: 3px;
+}
+
+#directions {
+    font-family: 'Open Sans Condensed', sans-serif;
+    padding: 30px;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 6px;
+}
+#directionsTitle {
+    letter-spacing: 3px;
+    font-size: 20px;
+}
+
+img {
+    height: 50px;
+    width: 50px;
+    display: block;
+    filter: drop-shadow(5px 5px 5px #ffff80);
+}
+
+button, img {
+    border: none;
+    margin: auto;
+}
+
+.crystals {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.subtitle {
+    font-family: 'Shrikhand', cursive;
+    color: #ff4d88;
+    text-shadow: 4px 4px 0 #ffccdd;
+    font-size: 25px;
+    padding: 30px;
+    text-align: left;
+}
+
+.numberBox {
+    background-color: #ff4d88;
+    padding: 30px;
+    border-radius: 25px;
+    border-color: #99e6ff;
+    border-width: 5px;
+    border-style: solid;
+    margin: 10px;
+    color: white;
+}
+
+.winloss {
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+    color: white;
+    background-color: #99e6ff;
+    margin: 20px;
+    letter-spacing: 10px;
+}
+
+
+
