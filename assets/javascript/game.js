@@ -16,9 +16,10 @@ var wins = 0;
 var losses = 0;
 
 var startGame = function() {
-    wins = 0;
-    losses = 0;
+    wins;
+    losses;
     score = 0;
+    randomNumber = Math.floor(Math.random()*100+19);
 
     $("#randomNumber").text(randomNumber);
     $("#score").text(score);
