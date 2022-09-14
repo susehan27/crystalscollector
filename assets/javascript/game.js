@@ -6,9 +6,7 @@
 // user loses if score is above random number (alert loss +1 loss count)
 // restart game
 
-
-
-var randomNumber = Math.floor(Math.random()*100+19);
+var randomNumber = Math.floor(Math.random()*(100-19)+19);
 var crystalNumber = [];
 var crystals = [];
 var score = 0;
@@ -19,13 +17,13 @@ var startGame = function() {
     wins;
     losses;
     score = 0;
-    randomNumber = Math.floor(Math.random()*100+19);
+    randomNumber = Math.floor(Math.random()*(100-19)+19);
 
     $("#randomNumber").text(randomNumber);
     $("#score").text(score);
     $(".winloss").text("CLICK ON A CRYSTAL TO START");
     $(".crystals").each(function() {
-        crystalNumber = [Math.floor(Math.random()*10+1)];
+        crystalNumber = [Math.floor(Math.random()*(10-1)+1)];
         crystals.push($(this).attr("data-crystalValue", crystalNumber));
     });
 }
@@ -56,9 +54,16 @@ $(".crystals").click(function(){
     }
 })
 
+$("#newNumber").click(function(){
+    startGame();
+})
 
+$("#reset").click(function(){
+    startGame();
+    localStorage.clear();
+})
 
-    $(document).ready(function() {
-        startGame();
-    })
-
+$(document).ready(function() {
+    startGame();
+    localStorage.clear();
+})
